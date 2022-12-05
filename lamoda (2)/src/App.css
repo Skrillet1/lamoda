@@ -1,0 +1,25 @@
+#root{
+    display: grid;
+    justify-content: center;
+    font-family: sans-serif;
+    letter-spacing: 0.01rem;
+}
+
+.App{
+    display: grid;
+    grid-template-areas:
+        "input  input"
+        "btns   btns"
+        "colors cards"
+        "costs  cards"
+        "goods  cards"
+        "...    cards";
+    grid-gap: 10px;
+    grid-template-columns: min-content 1fr;
+    width: 600px;
+    font-size: 0.9rem;
+}
+
+input{
+    outline: none;
+}
